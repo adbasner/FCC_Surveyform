@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <title>FCC Survey Form Page</title>
+  <link rel="stylesheet" type="text/css" href="tribute.css">
+</head>
+<body>
+  <div id="main">
+    <h1 id="title">Free Code Camp Survey</h1>
+    <p id="description">We want to know more about you! Please fill out the form below.</p>
+    <form id="survey-form" method="post">
+      <label for="name" id="name-label">Name:</label>
+
+      <input required type="text" name="name" id="name" placeholder="Enter your name">
+
+      <label for="email" id="email-label">Email:</label>
+
+      <input required type="email" name="email" id="email" placeholder="Enter your email">
+      
+      <label for="number" id="number-label">Age:</label>
+
+      <input required type="number" name="age" id="number" placeholder="Enter your age" min="0" max="120">
+
+      <label for="number" id="number-label">Age:</label>
+
+      <div id="radio">
+        <input type="radio" name="gender" value="male"> Male
+        <input type="radio" name="gender" value="female"> Female
+        <input type="radio" name="gender" value="other"> Other
+      </div>
+      
+      <label for="dropdown" id="dropdown-label">Why are you doing this?</label>
+
+      <select id="dropdown" name="reason">
+        <option value="fun">I'm just doing it for fun</option>
+        <option value="career">I'm looking to change my career</option>
+        <option value="practice">I just want to learn and practice</option>
+      </select>
+
+      <label for="topic" id="topic-label">What do you want to learn?</label>
+
+      <input id="topic1" type="checkbox" name="topic1" value="array">Arrays
+      <input id="topic2" type="checkbox" name="topic2" value="functions">Functions
+      <input id="topic3" type="checkbox" name="topic3" value="closures">Closures
+
+      <label for="other" id="other-label">Any other comments?</label>
+
+      <textarea id="other" name="other">
+        
+      </textarea>
+
+
+      <button id="submit">Submit</button>
+    </form>
+
+    <div id="footer">
+      <p>Written and coded by <a href="https://www.freecodecamp.org/adbasner" target="blank">Andrew Basner</a></p>
+    </div>
+  </div>
+
+  <!-- <script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
+</body>
+</html>
