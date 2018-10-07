@@ -3,12 +3,12 @@
 <head>
   <meta content="width=device-width, initial-scale=1" name="viewport" />
   <title>FCC Survey Form Page</title>
-  <link rel="stylesheet" type="text/css" href="tribute.css">
+  <link rel="stylesheet" type="text/css" href="surveyform.css">
 </head>
 <body>
   <div id="main">
     <h1 id="title">Free Code Camp Survey</h1>
-    <p id="description">We want to know more about you! Please fill out the form below.</p>
+    <p id="description">We want to know more about you! Please fill out the info below.</p>
     <form id="survey-form" method="post">
       <label for="name" id="name-label">Name:</label>
 
@@ -22,7 +22,7 @@
 
       <input required type="number" name="age" id="number" placeholder="Enter your age" min="0" max="120">
 
-      <label for="number" id="number-label">Age:</label>
+      <label for="radio" id="radio-label">Gender:</label>
 
       <div id="radio">
         <input type="radio" name="gender" value="male"> Male
@@ -39,10 +39,12 @@
       </select>
 
       <label for="topic" id="topic-label">What do you want to learn?</label>
-
-      <input id="topic1" type="checkbox" name="topic1" value="array">Arrays
-      <input id="topic2" type="checkbox" name="topic2" value="functions">Functions
-      <input id="topic3" type="checkbox" name="topic3" value="closures">Closures
+      <div id="topic">
+        <input id="topic1" type="checkbox" name="topic1" value="array">Arrays
+        <input id="topic2" type="checkbox" name="topic2" value="functions">Functions
+        <input id="topic3" type="checkbox" name="topic3" value="closures">Closures
+        
+      </div>
 
       <label for="other" id="other-label">Any other comments?</label>
 
